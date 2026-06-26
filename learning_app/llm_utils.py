@@ -17,7 +17,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 # Your Hugging Face token
-HF_TOKEN = "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"
+import os
+HF_TOKEN = os.getenv("HF_TOKEN")
 GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 
 # Groq API - Free tier available
